@@ -1,0 +1,42 @@
+@model IEnumerable<ItemsList>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+    <h1 class="text-center mt-2"> LIST PAGE </h1>
+
+
+<table class="table table-bordered table-striped">
+    <thead>
+        <tr>
+            <th>
+                List Created At
+            </th>
+            <th>
+                List Title
+            </th>
+            <th>
+                List Body
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td width="10%">
+                    @item.CreatedAt
+                </td>
+                <td width="40%">
+                    @item.Title
+                </td>
+                <td width="50%">
+                    @item.ListBody
+                </td>
+
+            </tr>
+        }
+    </tbody>
+</table>

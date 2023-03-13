@@ -1,0 +1,11 @@
+# Extensions 
+
+/.vscode
+
+# Build files
+/bin
+/data
+/Migrations
+/obj
+/wwwroot/lib
+
